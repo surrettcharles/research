@@ -6,7 +6,13 @@ public class App {
         return "Hello world.";
     }
 
+    public String getFarewell() {
+		return "Goodbye cruel world!";
+	}
+
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        App app = new App();
+        System.out.println(app.getGreeting());
+        System.out.println(app.getFarewell());
     }
 }

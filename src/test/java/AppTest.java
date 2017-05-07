@@ -9,4 +9,8 @@ public class AppTest {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
+    @Test public void testAppHasAFarewell() {
+        App classUnderTest = new App();
+        assertNotNull("app should have a greeting", classUnderTest.getFarewell());
+    }
 }
