@@ -12,4 +12,8 @@ node('master') {
 	stage('Build App') {
 		sh './gradlew build'
 	}
+	
+	stage('Publish Test Results') {
+		junit allowEmptyResults: true, testResults: '**/build/test-reports/*.xml'
+	}
 }
